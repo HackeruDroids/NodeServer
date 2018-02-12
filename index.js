@@ -74,6 +74,6 @@ app.put('/homedishes/:id', (req, res) => {
     res.json({ "result": kebabs[id] })
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
 
 //https://expressjs.com/en/guide/routing.html
