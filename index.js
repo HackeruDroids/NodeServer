@@ -31,6 +31,13 @@ var kebabs = [
         "level": "medium-well"
     }
 ]
+
+app.get('/', (req, res) => {
+    //Query database -> res.json(dbResult)
+    res.redirect('/homedishes')
+})
+
+
 //handle the server nodes:
 app.get('/homedishes', (req, res) => {
     //Query database -> res.json(dbResult)
